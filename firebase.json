@@ -16,14 +16,14 @@
           }
         ]
       }
+    ],
+    "redirects": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   },
-  "redirects": [
-    {
-      "source": "**",
-      "destination": "/index.html"
-    }
-  ],
   "emulators": {
     "hosting": {
       "port": 5000
