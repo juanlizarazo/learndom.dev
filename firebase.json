@@ -6,14 +6,24 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [ {
-      "source": "**/*.@(jpg|jpeg|gif|png)",
-      "headers": [ {
-        "key": "Cache-Control",
-        "value": "max-age=86400"
-      }]
-    }]
+    "headers": [
+      {
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=86400"
+          }
+        ]
+      }
+    ]
   },
+  "redirects": [
+    {
+      "source": "**",
+      "destination": "/index.html"
+    }
+  ],
   "emulators": {
     "hosting": {
       "port": 5000
