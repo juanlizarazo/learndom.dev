@@ -7,6 +7,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+      *, *:before, *:after {
+        box-sizing: border-box;
+      }
+
       .html {
         font-family: 'Roboto', sans-serif;
         font-size: 62.5%;
@@ -33,18 +37,22 @@
       }
 
       .legend {
-        padding-top: 7.5rem;
+        padding-top: 3rem;
         padding-bottom: 3rem;
+        padding: 3rem;
         background: #1f1f1c;
         color: #fff;
         display: flex;
         justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 4rem);
       }
 
       .footer {
         display: flex;
         justify-content: center;
         margin-top: 1rem;
+        padding-left: 3rem;
       }
 
       .created-by {
@@ -74,13 +82,13 @@
       }
 
       .cover-img {
-        width: 600px;
+        max-width: 60rem;
+        width: 100%;
       }
 
       .buy-btn {
         -webkit-appearance: button;
         -moz-appearance: button;
-        appearance: button;
         text-decoration: none;
         color: #1f1f1c;
         position: relative;
@@ -96,7 +104,7 @@
         justify-content: center;
         user-select: none;
         vertical-align: bottom;
-        height: 4rem;
+        height: 5rem;
         white-space: nowrap;
       }
 
