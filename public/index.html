@@ -47,14 +47,13 @@
     .legend {
       align-items: center;
       background: #1f1f1c;
-      bottom: 0;
+      bottom: 4rem;
       color: #fff;
       display: flex;
       justify-content: center;
       padding-left: 3rem;
       padding-right: 3rem;
       padding-bottom: 1rem;
-      min-height: 75rem;
       position: absolute;
       top: 0;
       left: 0;
@@ -138,6 +137,12 @@
     .twitter-logo {
       color: #3ba9ee;
       margin-right: 1rem;
+    }
+
+    @media screen and (orientation:landscape) {
+      .legend {
+        min-height: 75rem;
+      }
     }
   </style>
 </head>
