@@ -1,65 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html class="html">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Learn DOM manipulation with easy modern JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .html {
+        font-family: 'Roboto', sans-serif;
+        font-size: 62.5%;
+        margin: 0;
+      }
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.1.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.1.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.1.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+      .body {
+        margin: 0;
+      }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+      .badge {
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -.02rem;
+        font-size: 1.4rem;
+        border-radius: 0.4rem;
+        display: inline-block;
+        padding: .4rem 0.8rem;
+        white-space: nowrap;
+        background: #fff;
+        color: #1f1f1c;
+        margin-bottom: 1rem;
+        margin-right: 0.5rem;
+      }
+
+      .legend {
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+        background: #1f1f1c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+      }
+
+      .created-by {
+        font-size: 1.6rem;
+        font-weight: 400;
+        max-width: 60rem;
+        display: flex;
+        flex-grow: 1;
+      }
+
+      .container {
+        max-width: 60rem;
+      }
+
+      .title {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        font-size: 1.9rem;
+        line-height: 2.7rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+
+      .cover-img {
+        width: 600px;
+      }
+
+      .buy-btn {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        color: #1f1f1c;
+        position: relative;
+        font-size: 1.6rem;
+        border: solid 0.1rem #fff;
+        background: #fff;
+        align-items: center;
+        border-radius: 4px;
+        cursor: pointer;
+        display: inline-flex;
+        min-width: 10rem;
+        padding: 0 1.2rem;
+        justify-content: center;
+        user-select: none;
+        vertical-align: bottom;
+        height: 4rem;
+        white-space: nowrap;
+      }
+
+      .link {
+        color: #1f1f1c;
       }
     </style>
   </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <body class="body">
+    <div class="legend">
+      <div class="container">
+        <span class="badge">Development</span>
+        <span class="badge">Web Development</span>
+        <span class="badge">JavaScript</span>
+        <img class="cover-img" src="cover.jpg" alt="cover">
+
+        <h1 class="title">Learn DOM manipulation with easy modern JavaScript</h1>
+        <div class="subtitle">
+          Learn the Document Object Model fundamentals by building an interactive
+          game with plain HTML, DOM and modern JavaScript.
+        </div>
+        <a class="buy-btn" href="https://www.udemy.com/course/learn-dom-manipulation-with-easy-modern-javascript/?referralCode=B6DE30927C6A2ADE5D64">Buy now on udemy.com</a>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
+    <div class="footer">
+        <div class="created-by">
+          <a class="link" href="https://twitter.com/JuanLizarazoG" target="_blank">Created by Juan Lizarazo</a>
+        </div>
+    </div>
   </body>
 </html>
