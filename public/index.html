@@ -12,122 +12,133 @@
   <meta property="og:type" content="website"/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet">
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
   <style>
-      *, *:before, *:after {
-          box-sizing: border-box;
-      }
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
 
-      .html {
-          font-family: 'Roboto', sans-serif;
-          font-size: 62.5%;
-          margin: 0;
-      }
+    .html {
+      font-family: 'Roboto', sans-serif;
+      font-size: 62.5%;
+      margin: 0;
+    }
 
-      .body {
-          margin: 0;
-      }
+    .body {
+      margin: 0;
+    }
 
-      .badge {
-          background: #fff;
-          border-radius: 0.4rem;
-          color: #1f1f1c;
-          display: inline-block;
-          font-size: 1.4rem;
-          font-weight: 700;
-          letter-spacing: -.02rem;
-          line-height: 1.2;
-          margin-bottom: 1rem;
-          margin-right: 0.5rem;
-          padding: 0.4rem 0.8rem;
-          white-space: nowrap;
-      }
+    .badge {
+      background: #fff;
+      border-radius: 0.4rem;
+      color: #1f1f1c;
+      display: inline-block;
+      font-size: 1.4rem;
+      font-weight: 700;
+      letter-spacing: -.02rem;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
+      padding: 0.4rem 0.8rem;
+      white-space: nowrap;
+    }
 
-      .legend {
-          align-items: center;
-          background: #1f1f1c;
-          bottom: 0;
-          color: #fff;
-          display: flex;
-          justify-content: center;
-          padding-left: 3rem;
-          padding-right: 3rem;
-          position: absolute;
-          top: 0;
-          z-index: 1000;
-      }
+    .legend {
+      align-items: center;
+      background: #1f1f1c;
+      bottom: 0;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 1rem;
+      min-height: 75rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+    }
 
-      .footer {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          height: 4rem;
-          background: #fff;
-          display: flex;
-          justify-content: center;
-          padding-top: 1rem;
-          padding-left: 3rem;
-          z-index: 1100;
-      }
+    .container {
+      max-width: 60rem;
+    }
 
-      .created-by {
-          display: flex;
-          flex-grow: 1;
-          font-size: 1.6rem;
-          font-weight: 400;
-          max-width: 60rem;
-      }
+    .title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 3.8rem;
+      margin-bottom: 1.5rem;
+    }
 
-      .container {
-          max-width: 60rem;
-      }
+    .subtitle {
+      font-size: 1.9rem;
+      font-weight: 400;
+      line-height: 2.7rem;
+      margin-bottom: 2rem;
+    }
 
-      .title {
-          font-size: 3.2rem;
-          font-weight: 700;
-          line-height: 3.8rem;
-          margin-bottom: 1.5rem;
-      }
+    .cover-img {
+      max-width: 60rem;
+      width: 100%;
+    }
 
-      .subtitle {
-          font-size: 1.9rem;
-          font-weight: 400;
-          line-height: 2.7rem;
-          margin-bottom: 2rem;
-      }
+    .buy-btn {
+      -moz-appearance: button;
+      -webkit-appearance: button;
+      align-items: center;
+      background: #fff;
+      border-radius: 4px;
+      border: solid 0.1rem #fff;
+      color: #1f1f1c;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 1.6rem;
+      height: 5rem;
+      justify-content: center;
+      min-width: 10rem;
+      padding: 0 1.2rem;
+      position: relative;
+      text-decoration: none;
+      user-select: none;
+      vertical-align: bottom;
+      white-space: nowrap;
+    }
 
-      .cover-img {
-          max-width: 60rem;
-          width: 100%;
-      }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4rem;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      padding-left: 3rem;
+      z-index: 1100;
+    }
 
-      .buy-btn {
-          -moz-appearance: button;
-          -webkit-appearance: button;
-          align-items: center;
-          background: #fff;
-          border-radius: 4px;
-          border: solid 0.1rem #fff;
-          color: #1f1f1c;
-          cursor: pointer;
-          display: inline-flex;
-          font-size: 1.6rem;
-          height: 5rem;
-          justify-content: center;
-          min-width: 10rem;
-          padding: 0 1.2rem;
-          position: relative;
-          text-decoration: none;
-          user-select: none;
-          vertical-align: bottom;
-          white-space: nowrap;
-      }
+    .created-by {
+      display: flex;
+      flex-grow: 1;
+      font-size: 1.6rem;
+      font-weight: 400;
+      max-width: 60rem;
+    }
 
-      .link {
-          color: #1f1f1c;
-      }
+    .link {
+      color: #1f1f1c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .twitter-logo {
+      color: #3ba9ee;
+      margin-right: 1rem;
+    }
   </style>
 </head>
 <body class="body">
@@ -144,13 +155,36 @@
       game with plain HTML, DOM and modern JavaScript.
     </div>
     <a class="buy-btn"
-       href="https://www.udemy.com/course/learn-dom-manipulation-with-easy-modern-javascript/?referralCode=B6DE30927C6A2ADE5D64">Buy
-      now on udemy.com</a>
+       href="https://www.udemy.com/course/learn-dom-manipulation-with-easy-modern-javascript/?referralCode=B6DE30927C6A2ADE5D64">
+      Buy now on udemy.com
+    </a>
   </div>
 </div>
 <div class="footer">
   <div class="created-by">
-    <a class="link" href="https://twitter.com/JuanLizarazoG" target="_blank">Created by Juan Lizarazo</a>
+    <a class="link" href="https://twitter.com/JuanLizarazoG" target="_blank">
+      <svg class="twitter-logo" width="24" height="24" viewBox="328 355 335 276" xmlns="http://www.w3.org/2000/svg">
+        <path d="
+          M 630, 425
+          A 195, 195 0 0 1 331, 600
+          A 142, 142 0 0 0 428, 570
+          A  70,  70 0 0 1 370, 523
+          A  70,  70 0 0 0 401, 521
+          A  70,  70 0 0 1 344, 455
+          A  70,  70 0 0 0 372, 460
+          A  70,  70 0 0 1 354, 370
+          A 195, 195 0 0 0 495, 442
+          A  67,  67 0 0 1 611, 380
+          A 117, 117 0 0 0 654, 363
+          A  65,  65 0 0 1 623, 401
+          A 117, 117 0 0 0 662, 390
+          A  65,  65 0 0 1 630, 425
+          Z"
+              fill="currentColor"
+        />
+      </svg>
+      <span>Juan Lizarazo</span>
+    </a>
   </div>
 </div>
 </body>
